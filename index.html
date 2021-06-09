@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
+  <body class="blood">
     <div class="container">
       <header class="header">
         <a href="" class="logo__link"
@@ -42,18 +42,29 @@
         </nav>
       </header>
 
-      <section class="hero">
+      <section class="film">
         <div class="film__text">
           <span class="film_date">16 сентября 2021</span>
           <img src="img/venom-2.svg" alt="logo: venom2" class="film_logo" />
           <p class="film_desc">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
         </div>
-        <!-- /.hero_text -->
+        <!-- /.film_text -->
+        <div class="button_group">
+            <button class="button button_primary">
+                <img width="15" height="15" src="img/play.svg" alt="icon: play" class="button_icon">
+                <span class="button_text">смотреть трейлер</span>
+            </button>
+            <a href="trailer.html" class="button button_link">
+                <img src="img/ticket.svg" width="16" alt="icon: ticket" class="button_icon">
+                <span class="button_text">билеты на премьеру</span>
+            </a>
+        </div>
       </section>
-    <!-- /.hero -->
+    <!-- /.film -->
     </div>
     <!-- /.container -->
 
     <script src="js/app.js"></script>
+    <img src="img/venom.png" alt="photo: venom" class="venom">
   </body>
 </html>
