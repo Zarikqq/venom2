@@ -1,0 +1,50 @@
+body {
+  background: #14131a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.logo__link {
+  display: inline-block;
+  margin-right: 50px;
+}
+.nav__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav_menu_item {
+  margin-right: 30px;
+}
+.nav_menu_link {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 50%;
+}
+.film_date {
+  display: block;
+  margin-bottom: 38px;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.film_desc {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 423px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
