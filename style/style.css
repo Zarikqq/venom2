@@ -2,6 +2,20 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -64,22 +78,100 @@ body {
   margin-left: 10px;
 }
 .button_primary {
-    background-color: #fff;
-    color: #8d0019;
-    margin-right: 20px;
+  background-color: #fff;
+  color: #8d0019;
+  margin-right: 20px;
 }
 .button_link {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .button_group {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 .venom {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .blood {
-    background:  url(../img/blood.png) no-repeat top right,#000 url(../img/bg.jpg) no-repeat center / 100%;
+  background: url(../img/blood.png) no-repeat top right,
+    #000 url(../img/bg.jpg) no-repeat center / 100%;
+}
+.primary__bg {
+  background: 
+    #000 url(../img/bg.jpg) no-repeat center / 100%;
+}
+.content {
+  display: flex;
+}
+.col {
+  flex-basis: 50%;
+}
+.content__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.content__text {
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 463px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+.content__suptitle {
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.list {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  list-style-type: none;
+  
+  line-height: 1.5;
+}
+.column__2 {
+  column-count: 2;
+  column-gap: 63px;
+  max-width: 312px;
+  margin-bottom: 33px;
+}
+.trailer {
+  width: 356px;
+  height: 205px;
+  background: url(../img/trailer.png) no-repeat center / contain;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trailer .play {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border:none;
+  cursor: pointer;
+  
+}
+.trailer .play__icon {
+  transform: translate(0px,2px);
+}
+.poster__wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.poster {
+  margin-right: 30px;
+}
+.creators {
+}
+.poster__wrapper .content__suptitle {
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
