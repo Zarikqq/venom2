@@ -99,8 +99,7 @@ h6 {
     #000 url(../img/bg.jpg) no-repeat center / 100%;
 }
 .primary__bg {
-  background: 
-    #000 url(../img/bg.jpg) no-repeat center / 100%;
+  background: #000 url(../img/bg.jpg) no-repeat center / 100%;
 }
 .content {
   display: flex;
