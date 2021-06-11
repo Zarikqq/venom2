@@ -2,6 +2,9 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 ul,
 li {
   margin: 0;
@@ -18,6 +21,7 @@ h6 {
 }
 .container {
   max-width: 1140px;
+  width: 90%;
   margin: 0 auto;
 }
 .header {
@@ -61,6 +65,9 @@ h6 {
 
   color: rgba(255, 255, 255, 0.8);
 }
+.film_logo {
+  width: 70%;
+}
 .button {
   padding: 15px 30px;
   border: none;
@@ -87,19 +94,23 @@ h6 {
   text-decoration: none;
 }
 .button_group {
-  margin-top: 70px;
+  margin-top: 5%;
+  
 }
 .venom {
   position: absolute;
   top: 0;
   right: 0;
+  max-width: 730px;
+  width: 50%;
 }
 .blood {
-  background: url(../img/blood.png) no-repeat top right,
+  background: url(../img/blood.png) no-repeat center right / 60%,
     #000 url(../img/bg.jpg) no-repeat center / 100%;
 }
 .primary__bg {
-  background: #000 url(../img/bg.jpg) no-repeat center / 100%;
+  background: 
+    #000 url(../img/bg.jpg) no-repeat center / 100%;
 }
 .content {
   display: flex;
@@ -150,7 +161,7 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-.trailer .play {
+.trailer .a {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -172,4 +183,107 @@ h6 {
 .poster__wrapper .content__suptitle {
   margin-top: 20px;
   margin-bottom: 5px;
+}
+.menu_button {
+  display: none;
+}
+.menu_close {
+  display: none;
+}
+img {
+  max-width: 100%;
+}
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+  .col {
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 768px) {
+.venom {
+  top: 15%;
+}
+}
+
+@media (max-width: 576px) { 
+  .nav__menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(300%);
+    transition: transform 0.2s;
+  }
+  
+  .nav_menu_item {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-right: 0;
+    
+  }
+  .nav_menu_link {
+    color: #14131a;
+    opacity: 1;
+  }
+  .menu_close {
+    position: fixed;
+    right: 25px;
+    top: 65px;
+    display: flex;
+    align-items: center;
+    z-index: 21;
+    opacity: 0;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transform: translateX(300%);
+    transition: transform 0.2s;
+    transition-delay: 0.2s;
+  }
+  .is_active {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .menu_close_text {
+    margin-right: 10px;
+  }
+  .menu_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav {
+    margin-left: auto;
+  }
+  .menu_button_text {
+    margin-right: 10px;
+  }
+  .button_group {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .poster__wrapper {
+    flex-direction: column;
+  }
+  .trailer {
+    max-width: 365px;
+    width: 100%;
+  }
+  
 }

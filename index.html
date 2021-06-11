@@ -16,7 +16,7 @@
   <body class="blood">
     <div class="container">
       <header class="header">
-        <a href="index.html" class="logo__link"
+        <a href="" class="logo__link"
           ><img
             width="46"
             height="71"
@@ -25,6 +25,23 @@
             class="logo__image"
         /></a>
         <nav class="nav">
+          <button class="menu_button">
+            <span class="menu_button_text">меню</span>
+            <img
+              src="img/burger.svg"
+              alt="icon: burger"
+              class="menu_button_icon"
+            />
+          </button>
+          <button class="menu_close">
+            <span class="menu_close_text">закрыть</span>
+            <img
+              src="img/arrow.svg"
+              alt="icon: arrow"
+              class="menu_close_icon"
+            />
+          </button>
+
           <ul class="nav__menu">
             <li class="nav_menu_item">
               <a href="about.html" class="nav_menu_link">о фильме</a>
@@ -46,25 +63,41 @@
         <div class="film__text">
           <span class="film_date">16 сентября 2021</span>
           <img src="img/venom-2.svg" alt="logo: venom2" class="film_logo" />
-          <p class="film_desc">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
+          <p class="film_desc">
+            В настырном журналисте по-прежнему живет симбиот. Том Харди в образе
+            обаятельного суперзлодея из комиксов Marvel.
+          </p>
         </div>
         <!-- /.film_text -->
         <div class="button_group">
-            <button class="button button_primary">
-                <img width="15" height="15" src="img/play.svg" alt="icon: play" class="button_icon">
-                <span class="button_text">смотреть трейлер</span>
-            </button>
-            <a href="trailer.html" class="button button_link">
-                <img src="img/ticket.svg" width="16" alt="icon: ticket" class="button_icon">
-                <span class="button_text">билеты на премьеру</span>
-            </a>
+          <a href="https://www.youtube.com/watch?v=Othd8W8o3t0&ab_channel=SonyPicturesRU" class="button button_primary" target="_blank">
+            <img
+              width="15"
+              height="15"
+              src="img/play.svg"
+              alt="icon: play"
+              class="button_icon"
+            />
+            <span class="button_text">смотреть трейлер</span>
+          </a>
+          <a href="trailer.html" class="button button_link">
+            <img
+              src="img/ticket.svg"
+              width="16"
+              alt="icon: ticket"
+              class="button_icon"
+            />
+            <span class="button_text">билеты на премьеру</span>
+          </a>
         </div>
       </section>
-    <!-- /.film -->
+      <!-- /.film -->
     </div>
     <!-- /.container -->
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/app.js"></script>
-    <img src="img/venom.png" alt="photo: venom" class="venom">
+    <img src="img/venom.png" alt="photo: venom" class="venom" />
   </body>
 </html>
